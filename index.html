@@ -5,31 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JK Rústico | Móveis Rústicos e Peças de Madeira Reciclada em Teresópolis</title>
     <meta name="description" content="A JK Rústico transforma madeira reciclada em móveis rústicos e peças artesanais exclusivas. Localizada em Teresópolis, enviamos para todo o Brasil. Conheça nosso catálogo.">
-    
+    <link rel="canonical" href="https://www.jkrustico.com.br/">
+    <meta name="theme-color" content="#1F1C18">
+    <link rel="icon" type="image/png" href="logo-256.png">
+
     <!-- Open Graph -->
     <meta property="og:title" content="JK Rústico | Móveis Rústicos e Artesanais">
     <meta property="og:description" content="Peças exclusivas produzidas com madeira reciclada, unindo a beleza natural da madeira ao trabalho artesanal. Enviamos para todo Brasil.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.jkrustico.com.br/">
-    
+    <meta property="og:image" content="https://www.jkrustico.com.br/img1.jpg">
+    <meta property="og:locale" content="pt_BR">
+
     <!-- Preconnect Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
+
+    <!-- Hero image preload (LCP) -->
+    <link rel="preload" as="image" href="img1.jpg" fetchpriority="high">
+
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
-    
+
     <!-- Schema.org LocalBusiness -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FurnitureStore",
       "name": "JK Rústico",
-      "image": "https://www.jkrustico.com.br/logo.png",
+      "image": "https://www.jkrustico.com.br/img1.jpg",
+      "logo": "https://www.jkrustico.com.br/logo.png",
       "@id": "https://www.jkrustico.com.br/",
       "url": "https://www.jkrustico.com.br/",
       "telephone": "+5521967588087",
+      "sameAs": ["https://instagram.com/jkrustico"],
+      "areaServed": "BR",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Praça Higino da Silveira, 101 - Alto",
@@ -56,47 +67,87 @@
       }]
     }
     </script>
+
+    <!-- Schema.org FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "As peças são iguais às das fotos?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Cada peça é única. Por trabalharmos com madeira reciclada, veios, nós e tons variam de uma peça para outra. As fotos mostram trabalhos já produzidos e, pelo WhatsApp, mostramos o que está disponível no momento." }
+      },{
+        "@type": "Question",
+        "name": "Vocês fazem móveis sob medida?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sim. Conte o espaço disponível e o estilo do ambiente e verificamos as pranchas disponíveis para fazer um orçamento com medidas personalizadas." }
+      },{
+        "@type": "Question",
+        "name": "Vocês entregam fora de Teresópolis?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sim, enviamos para todo o Brasil. A forma de envio é combinada no atendimento, de acordo com a peça e a sua cidade." }
+      },{
+        "@type": "Question",
+        "name": "Posso conhecer as peças pessoalmente?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sim. A loja fica na Praça Higino da Silveira, 101, no Alto, em Teresópolis - RJ, e abre aos sábados das 9h às 18h30 e aos domingos das 9h às 18h." }
+      }]
+    }
+    </script>
 </head>
 <body>
+
+    <!-- Ícones reutilizáveis -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <symbol id="i-wa" viewBox="0 0 16 16"><path d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"/><path d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"/></symbol>
+        <symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+        <symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></symbol>
+        <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+        <symbol id="i-hammer" viewBox="0 0 24 24"><path d="m15 12-8.373 8.373a1 1 0 1 1-3-3L12 9"/><path d="m18 15 4-4"/><path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5"/></symbol>
+        <symbol id="i-ruler" viewBox="0 0 24 24"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+        <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    </svg>
 
     <!-- Header -->
     <header class="header">
         <div class="container header-container">
             <a href="index.html" class="logo" aria-label="Página Inicial JK Rústico">
-                <img src="logo.png" alt="JK Rústico Logo">
+                <img src="logo-256.png" alt="JK Rústico" width="256" height="256">
             </a>
-            
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Início</a></li>
+
+            <nav aria-label="Menu principal">
+                <ul class="nav-links" id="menu">
+                    <li><a href="index.html" aria-current="page">Início</a></li>
                     <li><a href="sobre/index.html">A JK Rústico</a></li>
                     <li><a href="produtos/index.html">Produtos</a></li>
                     <li><a href="contato/index.html">Contato</a></li>
+                    <li class="nav-cta"><a href="#" class="btn btn-primary wa-link-default"><svg class="icon"><use href="#i-wa"/></svg>Falar no WhatsApp</a></li>
                 </ul>
             </nav>
-            
-            <button class="mobile-menu-btn" aria-label="Abrir menu">☰</button>
-            <a href="#" class="btn btn-primary wa-link-default" style="display: none;"><svg fill="currentColor" width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"/><path d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"/></svg>Falar no WhatsApp</a>
+
+            <button class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
         </div>
     </header>
 
+    <main>
     <!-- Hero -->
     <section class="hero">
-        <img src="img1.jpg" alt="Ambiente sofisticado com móveis rústicos de madeira" class="hero-img">
+        <img src="img1.jpg" alt="Mesa de tora maciça da JK Rústico em ambiente iluminado" class="hero-img" width="1080" height="1350" fetchpriority="high">
         <div class="container">
             <div class="hero-content">
+                <span class="eyebrow">Feito à mão em Teresópolis - RJ</span>
                 <h1>Móveis rústicos que transformam ambientes.</h1>
                 <p>Peças exclusivas produzidas com madeira reciclada, unindo a beleza natural da madeira ao trabalho artesanal.</p>
-                
+
                 <div class="hero-ctas">
-                    <a href="#" class="btn btn-primary wa-link-default"><svg fill="currentColor" width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"/><path d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"/></svg>Falar no WhatsApp</a>
-                    <a href="produtos/index.html" class="btn btn-outline-white">Ver produtos</a>
+                    <a href="#" class="btn btn-primary wa-link-default"><svg class="icon"><use href="#i-wa"/></svg>Falar no WhatsApp</a>
+                    <a href="produtos/index.html" class="btn btn-outline-white">Ver catálogo</a>
                 </div>
-                
-                <div class="hero-note" style="margin-top: 1.5rem; font-size: 1.15rem; font-weight: 500; display: flex; align-items: center; justify-content: flex-start; gap: 8px; color: #ffffff;">
-                    <svg width="24px" height="24px" viewBox="0 -1 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.31 16.826C12.2864 17.9963 11.3464 18.9278 10.2052 18.9118C9.06401 18.8957 8.14927 17.9382 8.15697 16.7676C8.16467 15.5971 9.09191 14.6522 10.2332 14.652C10.7897 14.6578 11.3212 14.8901 11.7106 15.2978C12.1001 15.7055 12.3157 16.2552 12.31 16.826V16.826Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path fill-rule="evenodd" clip-rule="evenodd" d="M22.2014 16.826C22.1778 17.9963 21.2378 18.9278 20.0966 18.9118C18.9554 18.8957 18.0407 17.9382 18.0484 16.7676C18.0561 15.5971 18.9833 14.6522 20.1246 14.652C20.6811 14.6578 21.2126 14.8901 21.602 15.2978C21.9915 15.7055 22.2071 16.2552 22.2014 16.826V16.826Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.8032 17.576C18.2174 17.576 18.5532 17.2402 18.5532 16.826C18.5532 16.4118 18.2174 16.076 17.8032 16.076V17.576ZM12.31 16.076C11.8958 16.076 11.56 16.4118 11.56 16.826C11.56 17.2402 11.8958 17.576 12.31 17.576V16.076ZM17.0571 16.826C17.0571 17.2402 17.3928 17.576 17.8071 17.576C18.2213 17.576 18.5571 17.2402 18.5571 16.826H17.0571ZM18.5571 11.559C18.5571 11.1448 18.2213 10.809 17.8071 10.809C17.3928 10.809 17.0571 11.1448 17.0571 11.559H18.5571ZM17.8071 16.076C17.3928 16.076 17.0571 16.4118 17.0571 16.826C17.0571 17.2402 17.3928 17.576 17.8071 17.576V16.076ZM18.0518 17.576C18.466 17.576 18.8018 17.2402 18.8018 16.826C18.8018 16.4118 18.466 16.076 18.0518 16.076V17.576ZM22.189 16.0762C21.7749 16.0852 21.4465 16.4281 21.4555 16.8423C21.4644 17.2564 21.8074 17.5848 22.2215 17.5758L22.189 16.0762ZM24.4 14.485L25.1499 14.4718C25.1492 14.4331 25.1455 14.3946 25.1389 14.3565L24.4 14.485ZM24.63 11.4305C24.559 11.0224 24.1706 10.7491 23.7625 10.8201C23.3544 10.8911 23.0812 11.2794 23.1521 11.6875L24.63 11.4305ZM17.8031 6.127C17.3889 6.127 17.0531 6.46279 17.0531 6.877C17.0531 7.29121 17.3889 7.627 17.8031 7.627V6.127ZM21.2849 6.877L21.2849 7.62702L21.2897 7.62698L21.2849 6.877ZM22.8737 7.56387L22.327 8.07731L22.327 8.07731L22.8737 7.56387ZM23.4835 9.218L22.7342 9.18603C22.7319 9.23979 22.7354 9.29363 22.7446 9.34663L23.4835 9.218ZM23.1522 11.6876C23.2232 12.0957 23.6116 12.3689 24.0197 12.2979C24.4278 12.2268 24.701 11.8384 24.6299 11.4304L23.1522 11.6876ZM18.5531 6.877C18.5531 6.46279 18.2174 6.127 17.8031 6.127C17.3889 6.127 17.0531 6.46279 17.0531 6.877H18.5531ZM17.0531 11.559C17.0531 11.9732 17.3889 12.309 17.8031 12.309C18.2174 12.309 18.5531 11.9732 18.5531 11.559H17.0531ZM17.0531 6.877C17.0531 7.29121 17.3889 7.627 17.8031 7.627C18.2174 7.627 18.5531 7.29121 18.5531 6.877H17.0531ZM17.8031 6.077L17.0531 6.0722V6.077H17.8031ZM16.7657 5L16.77 4.25H16.7657V5ZM7.42037 5L7.42037 4.24999L7.41679 4.25001L7.42037 5ZM6.68411 5.31693L6.14467 4.79587L6.14467 4.79587L6.68411 5.31693ZM6.382 6.075L7.13201 6.075L7.13199 6.07158L6.382 6.075ZM6.382 15.75L7.132 15.7534V15.75H6.382ZM6.68411 16.5081L6.14467 17.0291L6.14467 17.0291L6.68411 16.5081ZM7.42037 16.825L7.41679 17.575H7.42037V16.825ZM8.1526 17.575C8.56681 17.575 8.9026 17.2392 8.9026 16.825C8.9026 16.4108 8.56681 16.075 8.1526 16.075V17.575ZM17.8051 10.808C17.3909 10.808 17.0551 11.1438 17.0551 11.558C17.0551 11.9722 17.3909 12.308 17.8051 12.308V10.808ZM23.893 12.308C24.3072 12.308 24.643 11.9722 24.643 11.558C24.643 11.1438 24.3072 10.808 23.893 10.808V12.308ZM1 6.25C0.585786 6.25 0.25 6.58579 0.25 7C0.25 7.41421 0.585786 7.75 1 7.75V6.25ZM4.05175 7.75C4.46596 7.75 4.80175 7.41421 4.80175 7C4.80175 6.58579 4.46596 6.25 4.05175 6.25V7.75ZM1.975 9.25C1.56079 9.25 1.225 9.58579 1.225 10C1.225 10.4142 1.56079 10.75 1.975 10.75V9.25ZM3.925 10.75C4.33921 10.75 4.675 10.4142 4.675 10C4.675 9.58579 4.33921 9.25 3.925 9.25V10.75ZM2.56975 12.25C2.15554 12.25 1.81975 12.5858 1.81975 13C1.81975 13.4142 2.15554 13.75 2.56975 13.75V12.25ZM3.925 13.75C4.33921 13.75 4.675 13.4142 4.675 13C4.675 12.5858 4.33921 12.25 3.925 12.25V13.75ZM17.8032 16.076H12.31V17.576H17.8032V16.076ZM18.5571 16.826V11.559H17.0571V16.826H18.5571ZM17.8071 17.576H18.0518V16.076H17.8071V17.576ZM22.2215 17.5758C23.8876 17.5397 25.1791 16.1341 25.1499 14.4718L23.6501 14.4982C23.6655 15.3704 22.9939 16.0587 22.189 16.0762L22.2215 17.5758ZM25.1389 14.3565L24.63 11.4305L23.1521 11.6875L23.6611 14.6135L25.1389 14.3565ZM17.8031 7.627H21.2849V6.127H17.8031V7.627ZM21.2897 7.62698C21.6768 7.62448 22.0522 7.7847 22.327 8.07731L23.4204 7.05042C22.8641 6.4581 22.0909 6.12177 21.28 6.12702L21.2897 7.62698ZM22.327 8.07731C22.6025 8.37065 22.7519 8.7712 22.7342 9.18603L24.2328 9.24997C24.2675 8.43728 23.976 7.642 23.4204 7.05042L22.327 8.07731ZM22.7446 9.34663L23.1522 11.6876L24.6299 11.4304L24.2224 9.08937L22.7446 9.34663ZM17.0531 6.877V11.559H18.5531V6.877H17.0531ZM18.5531 6.877V6.077H17.0531V6.877H18.5531ZM18.5531 6.0818C18.5562 5.60485 18.3745 5.14259 18.0422 4.79768L16.9619 5.83829C17.0188 5.8974 17.0537 5.98123 17.0532 6.0722L18.5531 6.0818ZM18.0422 4.79768C17.7094 4.45212 17.2522 4.25277 16.77 4.25001L16.7615 5.74999C16.8331 5.7504 16.9056 5.77984 16.9619 5.83829L18.0422 4.79768ZM16.7657 4.25H7.42037V5.75H16.7657V4.25ZM7.41679 4.25001C6.93498 4.25231 6.4778 4.45098 6.14467 4.79587L7.22355 5.83799C7.27989 5.77967 7.3524 5.75033 7.42396 5.74999L7.41679 4.25001ZM6.14467 4.79587C5.81216 5.1401 5.62983 5.60177 5.63201 6.07843L7.13199 6.07158C7.13158 5.98066 7.16659 5.89696 7.22355 5.83799L6.14467 4.79587ZM5.632 6.075V15.75H7.132V6.075H5.632ZM5.63201 15.7466C5.62983 16.2232 5.81216 16.6849 6.14467 17.0291L7.22355 15.987C7.16659 15.928 7.13158 15.8443 7.13199 15.7534L5.63201 15.7466ZM6.14467 17.0291C6.4778 17.374 6.93498 17.5727 7.41679 17.575L7.42396 16.075C7.3524 16.0747 7.27988 16.0453 7.22355 15.987L6.14467 17.0291ZM7.42037 17.575H8.1526V16.075H7.42037V17.575ZM17.8051 12.308H23.893V10.808H17.8051V12.308ZM1 7.75H4.05175V6.25H1V7.75ZM1.975 10.75H3.925V9.25H1.975V10.75ZM2.56975 13.75H3.925V12.25H2.56975V13.75Z" fill="currentColor"/></svg>
-                    <span>Enviamos para todo o Brasil</span>
-                </div>
+
+                <ul class="hero-badges">
+                    <li><svg class="icon icon-stroke"><use href="#i-truck"/></svg>Enviamos para todo o Brasil</li>
+                    <li><svg class="icon icon-stroke"><use href="#i-gem"/></svg>Cada peça é única</li>
+                    <li><svg class="icon icon-stroke"><use href="#i-ruler"/></svg>Medidas sob consulta</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -105,13 +156,15 @@
     <section class="section section-bg-alt">
         <div class="container split-section">
             <div class="split-content">
+                <span class="eyebrow">Nossa essência</span>
                 <h2>A natureza cria. Nós lapidamos.</h2>
                 <p>A JK Rústico transforma madeira e elementos naturais em peças com personalidade. Cada produto preserva características únicas da matéria-prima, criando móveis e peças que carregam história e identidade.</p>
-                <br>
-                <a href="sobre/index.html" class="btn btn-outline">Conheça nossa história</a>
+                <div class="actions">
+                    <a href="sobre/index.html" class="btn btn-outline">Conheça nossa história</a>
+                </div>
             </div>
             <div class="split-image-container">
-                <img src="img2.jpg" alt="Trabalho artesanal em madeira reciclada" loading="lazy">
+                <img src="img2.jpg" alt="Mesa de jantar orgânica com as aberturas naturais da tora preservadas" width="1080" height="1440" loading="lazy">
             </div>
         </div>
     </section>
@@ -119,47 +172,39 @@
     <!-- Categorias -->
     <section class="section">
         <div class="container">
-            <div class="text-center mb-lg">
+            <div class="section-head">
+                <span class="eyebrow">Catálogo</span>
                 <h2>O que criamos</h2>
-                <p>Nossas principais categorias de peças artesanais.</p>
+                <p>Do tampo da mesa ao detalhe da decoração, cada peça nasce de uma madeira diferente.</p>
             </div>
-            
+
             <div class="grid-3">
-                <!-- Categoria 1 -->
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="img3.jpg" alt="Mesa de jantar rústica de madeira maciça" loading="lazy">
+                <a href="produtos/index.html#mesas" class="category-card">
+                    <img src="img3.jpg" alt="Mesa de jantar rústica com tampo inteiriço em varanda envidraçada" width="1080" height="1440" loading="lazy">
+                    <div class="category-card-body">
+                        <h3>Mesas</h3>
+                        <p>Jantar, área gourmet e tampos inteiriços.</p>
+                        <span>Ver mesas</span>
                     </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Móveis Rústicos</h3>
-                        <p class="card-desc">Mesas, bancos e aparadores para ambientes acolhedores.</p>
-                        <a href="moveis-rusticos/index.html" class="btn btn-outline" style="width: 100%;">Ver produtos</a>
+                </a>
+
+                <a href="produtos/index.html#aparadores" class="category-card">
+                    <img src="img5.jpg" alt="Aparador orgânico de madeira maciça com base de ferro" width="1080" height="1350" loading="lazy">
+                    <div class="category-card-body">
+                        <h3>Aparadores e bancos</h3>
+                        <p>Peças de apoio para hall, sala e varanda.</p>
+                        <span>Ver aparadores</span>
                     </div>
-                </div>
-                
-                <!-- Categoria 2 -->
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="img4.jpg" alt="Lareira rústica artesanal" loading="lazy">
+                </a>
+
+                <a href="produtos/index.html#decoracao" class="category-card">
+                    <img src="img4.jpg" alt="Espelho com moldura rústica de madeira maciça" width="1080" height="1350" loading="lazy">
+                    <div class="category-card-body">
+                        <h3>Decoração</h3>
+                        <p>Espelhos, carrinhos bar e detalhes naturais.</p>
+                        <span>Ver decoração</span>
                     </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Lareiras</h3>
-                        <p class="card-desc">Lareiras exclusivas, desenhadas para trazer calor e sofisticação.</p>
-                        <a href="lareiras/index.html" class="btn btn-outline" style="width: 100%;">Ver produtos</a>
-                    </div>
-                </div>
-                
-                <!-- Categoria 3 -->
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="img5.jpg" alt="Peças decorativas em madeira" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Peças Decorativas</h3>
-                        <p class="card-desc">Detalhes naturais que completam a identidade do seu espaço.</p>
-                        <a href="produtos/index.html" class="btn btn-outline" style="width: 100%;">Ver produtos</a>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -167,65 +212,62 @@
     <!-- Catálogo em Destaque -->
     <section class="section section-bg-alt">
         <div class="container">
-            <div class="text-center mb-lg">
-                <h2>Peças em Destaque</h2>
+            <div class="section-head">
+                <span class="eyebrow">Destaques</span>
+                <h2>Peças em destaque</h2>
                 <p>Exemplos do nosso catálogo. Cada peça possui características únicas.</p>
             </div>
-            
+
             <div class="grid-4">
-                <!-- Produto 1 -->
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="img6.jpg" alt="Mesa de Jantar Rústica Maciça" loading="lazy">
+                        <img src="img7.jpg" alt="Conjunto de três mesas de centro feitas de tora de madeira" width="1080" height="1440" loading="lazy">
                     </div>
                     <div class="card-content">
-                        <span class="card-category">Mesas</span>
-                        <h3 class="card-title">Mesa de Jantar Rústica</h3>
-                        <p class="card-desc">Feita com madeira de demolição, acabamento preservando veios naturais.</p>
-                        <a href="#" class="btn btn-primary" data-wa-msg="Olá! Tenho interesse na Mesa de Jantar Rústica. Gostaria de saber disponibilidade e informações."><svg fill="currentColor" width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"/><path d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"/></svg>Tenho interesse</a>
+                        <span class="card-category">Salas</span>
+                        <h3 class="card-title">Mesas de Centro de Tora</h3>
+                        <p class="card-desc">Conjunto de três peças que se encaixam e mostram os anéis da madeira.</p>
+                        <a href="#" class="btn btn-primary" data-wa-msg="Olá! Tenho interesse nas Mesas de Centro de Tora. Gostaria de saber disponibilidade e informações."><svg class="icon"><use href="#i-wa"/></svg>Tenho interesse</a>
                     </div>
                 </div>
-                
-                <!-- Produto 2 -->
+
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="img7.jpg" alt="Banco de Madeira Orgânica" loading="lazy">
+                        <img src="img8.jpg" alt="Banco esculpido em tora de madeira maciça" width="1080" height="1349" loading="lazy">
                     </div>
                     <div class="card-content">
                         <span class="card-category">Bancos</span>
-                        <h3 class="card-title">Banco Orgânico</h3>
+                        <h3 class="card-title">Banco de Tora</h3>
                         <p class="card-desc">Desenho natural seguindo o corte original da tora de madeira.</p>
-                        <a href="#" class="btn btn-primary mt-auto" data-wa-msg="Olá! Tenho interesse no Banco Orgânico. Gostaria de saber disponibilidade e informações."><svg fill="currentColor" width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"/><path d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"/></svg>Tenho interesse</a>
+                        <a href="#" class="btn btn-primary" data-wa-msg="Olá! Tenho interesse no Banco de Tora. Gostaria de saber disponibilidade e informações."><svg class="icon"><use href="#i-wa"/></svg>Tenho interesse</a>
                     </div>
                 </div>
-                
-                <!-- Produto 3 -->
+
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="img8.jpg" alt="Aparador de Madeira Nobre" loading="lazy">
+                        <img src="img10.jpg" alt="Aparador de madeira maciça sobre base de máquina de costura Singer antiga" width="1440" height="1440" loading="lazy">
                     </div>
                     <div class="card-content">
                         <span class="card-category">Aparadores</span>
-                        <h3 class="card-title">Aparador Nobre</h3>
-                        <p class="card-desc">Elegância rústica para hall de entrada ou salas de estar.</p>
-                        <a href="#" class="btn btn-primary mt-auto" data-wa-msg="Olá! Tenho interesse no Aparador Nobre. Gostaria de saber disponibilidade e informações."><svg fill="currentColor" width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"/><path d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"/></svg>Tenho interesse</a>
+                        <h3 class="card-title">Aparador Singer</h3>
+                        <p class="card-desc">Tampo maciço sobre a base de ferro de uma máquina de costura antiga.</p>
+                        <a href="#" class="btn btn-primary" data-wa-msg="Olá! Tenho interesse no Aparador Singer. Gostaria de saber disponibilidade e informações."><svg class="icon"><use href="#i-wa"/></svg>Tenho interesse</a>
                     </div>
                 </div>
-                
-                <!-- Produto 4 -->
+
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img src="img9.jpg" alt="Lareira de Chão Rústica" loading="lazy">
+                        <img src="img6.jpg" alt="Carrinho bar com bandejas de madeira e estrutura de ferro" width="1080" height="1440" loading="lazy">
                     </div>
                     <div class="card-content">
-                        <span class="card-category">Lareiras</span>
-                        <h3 class="card-title">Lareira de Chão</h3>
-                        <p class="card-desc">Peça imponente combinando aço e base de madeira reciclada.</p>
-                        <a href="#" class="btn btn-primary mt-auto" data-wa-msg="Olá! Tenho interesse na Lareira de Chão. Gostaria de saber disponibilidade e informações."><svg fill="currentColor" width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"/><path d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"/></svg>Tenho interesse</a>
+                        <span class="card-category">Decoração</span>
+                        <h3 class="card-title">Carrinho Bar</h3>
+                        <p class="card-desc">Bandejas de madeira com estrutura de ferro, adega e rodízios.</p>
+                        <a href="#" class="btn btn-primary" data-wa-msg="Olá! Tenho interesse no Carrinho Bar. Gostaria de saber disponibilidade e informações."><svg class="icon"><use href="#i-wa"/></svg>Tenho interesse</a>
                     </div>
                 </div>
             </div>
-            
+
             <div class="text-center" style="margin-top: 3rem;">
                 <a href="produtos/index.html" class="btn btn-outline">Ver catálogo completo</a>
             </div>
@@ -233,33 +275,51 @@
     </section>
 
     <!-- Sobre / Madeira Reciclada -->
-    <section class="section section-dark">
-        <div class="container split-section">
+    <section class="section">
+        <div class="container split-section reverse">
             <div class="split-image-container">
-                <img src="img10.jfif" alt="Detalhe de móvel de madeira reciclada mostrando texturas" loading="lazy">
+                <img src="img9.jpg" alt="Mesa longa de madeira maciça em área gourmet decorada com flores" width="1080" height="1440" loading="lazy">
             </div>
-            <div class="split-content" style="order: -1;">
+            <div class="split-content">
+                <span class="eyebrow">Madeira reciclada</span>
                 <h2>Madeira reciclada. História preservada.</h2>
                 <p>Trabalhar com <strong>madeira reciclada</strong> é uma escolha por autenticidade e sustentabilidade. Cada sulco, marca do tempo ou alteração de tom não é um defeito, mas a prova de que aquela matéria-prima tem história.</p>
                 <p>Nossos <strong>móveis rústicos de madeira</strong> ganham uma nova vida através do trabalho artesanal e cuidadoso da JK Rústico, oferecendo uma <strong>decoração rústica</strong> de alto padrão para quem valoriza a natureza em seus ambientes.</p>
-                <br>
-                <a href="madeira-reciclada/index.html" class="btn btn-outline">Saiba mais sobre a madeira</a>
+                <div class="actions">
+                    <a href="sobre/index.html" class="btn btn-outline">Saiba mais sobre a madeira</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- SEO Teresópolis -->
-    <section class="section">
-        <div class="container split-section">
-            <div class="split-content">
-                <h2>Móveis rústicos em Teresópolis</h2>
-                <p>A JK Rústico está localizada no bairro do Alto, em Teresópolis - RJ, uma região inspiradora da serra fluminense. Atendemos clientes da cidade e de toda a região, criando peças únicas para casas, pousadas e ambientes comerciais.</p>
-                <p>Embora nossa produção artesanal esteja na serra, nossa logística permite <strong>envios para todo o Brasil</strong>. Você pode ter um autêntico móvel rústico de Teresópolis, independentemente de onde esteja.</p>
-                <br>
-                <a href="contato/index.html" class="btn btn-primary">Veja onde estamos</a>
+    <!-- Como funciona -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Como funciona</span>
+                <h2>Da madeira até a sua casa</h2>
+                <p>Atendimento pessoal e direto, do primeiro contato à entrega.</p>
             </div>
-            <div class="split-image-container">
-                <img src="img1.jpg" alt="Oficina artesanal e móveis rústicos em Teresópolis" loading="lazy">
+            <ol class="steps">
+                <li class="step">
+                    <h3>Escolha a peça</h3>
+                    <p>Veja o catálogo ou mande uma foto do seu ambiente com a ideia que você tem.</p>
+                </li>
+                <li class="step">
+                    <h3>Converse com a gente</h3>
+                    <p>Pelo WhatsApp, combinamos medidas, madeira e acabamento.</p>
+                </li>
+                <li class="step">
+                    <h3>Produção artesanal</h3>
+                    <p>Sua peça é preparada à mão na nossa oficina em Teresópolis.</p>
+                </li>
+                <li class="step">
+                    <h3>Entrega</h3>
+                    <p>Retire na loja ou receba em qualquer lugar do Brasil.</p>
+                </li>
+            </ol>
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="#" class="btn btn-primary" data-wa-msg="Olá! Vi o site da JK Rústico e gostaria de fazer um orçamento."><svg class="icon"><use href="#i-wa"/></svg>Pedir um orçamento</a>
             </div>
         </div>
     </section>
@@ -269,41 +329,25 @@
         <div class="container">
             <div class="features-grid">
                 <div class="feature-item">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                    </div>
+                    <div class="feature-icon"><svg class="icon-stroke"><use href="#i-gem"/></svg></div>
                     <h3 class="feature-title">Peças exclusivas</h3>
                     <p>Nenhum produto é igual ao outro.</p>
                 </div>
-                
+
                 <div class="feature-item">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21.5 12C21.5 17.2467 17.2467 21.5 12 21.5C6.75329 21.5 2.5 17.2467 2.5 12C2.5 6.75329 6.75329 2.5 12 2.5C17.2467 2.5 21.5 6.75329 21.5 12Z"/><path d="M11 8C11 7.44772 11.4477 7 12 7C12.5523 7 13 7.44772 13 8C13 8.55228 12.5523 9 12 9C11.4477 9 11 8.55228 11 8Z"/><path d="M12 11V17"/><path d="M9 17H15"/></svg>
-                    </div>
+                    <div class="feature-icon"><svg class="icon-stroke"><use href="#i-leaf"/></svg></div>
                     <h3 class="feature-title">Madeira reciclada</h3>
                     <p>Sustentabilidade com alto padrão estético.</p>
                 </div>
-                
+
                 <div class="feature-item">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.5 9.5L12 12M12 12L9.5 14.5M12 12L14.5 14.5M12 12L9.5 9.5M12 21.5C17.2467 21.5 21.5 17.2467 21.5 12C21.5 6.75329 17.2467 2.5 12 2.5C6.75329 2.5 2.5 6.75329 2.5 12C2.5 17.2467 6.75329 21.5 12 21.5Z"/></svg>
-                    </div>
+                    <div class="feature-icon"><svg class="icon-stroke"><use href="#i-hammer"/></svg></div>
                     <h3 class="feature-title">Trabalho artesanal</h3>
                     <p>Cuidado e precisão em cada detalhe.</p>
                 </div>
-                
+
                 <div class="feature-item">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-                    </div>
-                    <h3 class="feature-title">Atendimento pessoal</h3>
-                    <p>Conversamos para entender sua necessidade.</p>
-                </div>
-                
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="8" width="18" height="12" rx="2" ry="2"/><path d="M4 8v-2a2 2 0 012-2h12a2 2 0 012 2v2"/><path d="M12 12v3"/><path d="M9 15h6"/></svg>
-                    </div>
+                    <div class="feature-icon"><svg class="icon-stroke"><use href="#i-truck"/></svg></div>
                     <h3 class="feature-title">Envio nacional</h3>
                     <p>Para todo o Brasil com segurança.</p>
                 </div>
@@ -311,19 +355,68 @@
         </div>
     </section>
 
+    <!-- SEO Teresópolis -->
+    <section class="section">
+        <div class="container split-section">
+            <div class="split-content">
+                <span class="eyebrow">Visite a loja</span>
+                <h2>Móveis rústicos em Teresópolis</h2>
+                <p>A JK Rústico está localizada no bairro do Alto, em Teresópolis - RJ, uma região inspiradora da serra fluminense. Atendemos clientes da cidade e de toda a região, criando peças únicas para casas, pousadas e ambientes comerciais.</p>
+                <p>Embora nossa produção artesanal esteja na serra, nossa logística permite <strong>envios para todo o Brasil</strong>. Você pode ter um autêntico móvel rústico de Teresópolis, independentemente de onde esteja.</p>
+                <ul class="info-list">
+                    <li><svg class="icon icon-stroke"><use href="#i-pin"/></svg><span><strong>Praça Higino da Silveira, 101 - Alto</strong><br>Teresópolis - RJ, 25961-025</span></li>
+                    <li><svg class="icon icon-stroke"><use href="#i-clock"/></svg><span><strong>Sábado:</strong> 09:00 às 18:30<br><strong>Domingo:</strong> 09:00 às 18:00<br>Segunda a sexta: fechado</span></li>
+                </ul>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Pra%C3%A7a+Higino+da+Silveira+101+Alto+Teres%C3%B3polis+RJ" target="_blank" rel="noopener" class="btn btn-primary">Como chegar</a>
+            </div>
+            <div class="map-embed">
+                <iframe title="Mapa da JK Rústico em Teresópolis" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.083758364861!2d-42.97782352468307!3d-22.42851502283839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9852bf2c62c161%3A0xe541eafcf91e1d23!2sPra%C3%A7a%20Higino%20da%20Silveira%2C%20101%20-%20Alto%2C%20Teres%C3%B3polis%20-%20RJ%2C%2025961-025!5e0!3m2!1spt-BR!2sbr!4v1716301234567!5m2!1spt-BR!2sbr" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-bg-alt">
+        <div class="container">
+            <div class="section-head">
+                <span class="eyebrow">Dúvidas</span>
+                <h2>Perguntas frequentes</h2>
+            </div>
+            <div class="faq">
+                <details>
+                    <summary>As peças são iguais às das fotos?</summary>
+                    <p>Cada peça é única. Por trabalharmos com madeira reciclada, veios, nós e tons variam de uma peça para outra. As fotos mostram trabalhos já produzidos e, pelo WhatsApp, mostramos o que está disponível no momento.</p>
+                </details>
+                <details>
+                    <summary>Vocês fazem móveis sob medida?</summary>
+                    <p>Sim. Conte o espaço disponível e o estilo do ambiente e verificamos as pranchas disponíveis para fazer um orçamento com medidas personalizadas.</p>
+                </details>
+                <details>
+                    <summary>Vocês entregam fora de Teresópolis?</summary>
+                    <p>Sim, enviamos para todo o Brasil. A forma de envio é combinada no atendimento, de acordo com a peça e a sua cidade.</p>
+                </details>
+                <details>
+                    <summary>Posso conhecer as peças pessoalmente?</summary>
+                    <p>Sim. A loja fica na Praça Higino da Silveira, 101, no Alto, em Teresópolis - RJ, e abre aos sábados das 9h às 18h30 e aos domingos das 9h às 18h.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
     <!-- Instagram -->
     <section class="section">
         <div class="container text-center">
+            <span class="eyebrow">Instagram</span>
             <h2 class="mb-sm">Siga a JK Rústico</h2>
-            <p class="mb-md"><a href="https://instagram.com/jkrustico" target="_blank" rel="noopener">@jkrustico</a></p>
-            
-            <div class="grid-4" style="gap: 1rem; margin-bottom: 2rem;">
-                <img src="img2.jpg" alt="Instagram foto 1" loading="lazy" style="aspect-ratio: 1; object-fit: cover; border-radius: var(--radius-sm);">
-                <img src="img3.jpg" alt="Instagram foto 2" loading="lazy" style="aspect-ratio: 1; object-fit: cover; border-radius: var(--radius-sm);">
-                <img src="img4.jpg" alt="Instagram foto 3" loading="lazy" style="aspect-ratio: 1; object-fit: cover; border-radius: var(--radius-sm);">
-                <img src="img5.jpg" alt="Instagram foto 4" loading="lazy" style="aspect-ratio: 1; object-fit: cover; border-radius: var(--radius-sm);">
+            <p><a href="https://instagram.com/jkrustico" target="_blank" rel="noopener" class="link-arrow">@jkrustico</a></p>
+
+            <div class="insta-grid">
+                <img src="img3.jpg" alt="Mesa de jantar rústica em varanda" width="1080" height="1440" loading="lazy">
+                <img src="img7.jpg" alt="Mesas de centro de tora" width="1080" height="1440" loading="lazy">
+                <img src="img4.jpg" alt="Espelho com moldura rústica" width="1080" height="1350" loading="lazy">
+                <img src="img2.jpg" alt="Mesa de jantar orgânica" width="1080" height="1440" loading="lazy">
             </div>
-            
+
             <a href="https://instagram.com/jkrustico" target="_blank" rel="noopener" class="btn btn-outline">Acompanhar no Instagram</a>
         </div>
     </section>
@@ -333,21 +426,22 @@
         <div class="container">
             <h2 class="mb-sm">Encontrou uma peça que combina com seu ambiente?</h2>
             <p class="mb-lg" style="max-width: 600px; margin-left: auto; margin-right: auto;">Fale com a JK Rústico e consulte disponibilidade, medidas, acabamento e envio.</p>
-            <a href="#" class="btn btn-primary" data-wa-msg="Olá! Vi o site da JK Rústico e gostaria de mais informações."><svg fill="currentColor" width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"/><path d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"/></svg>Falar com a JK Rústico</a>
+            <a href="#" class="btn btn-primary" data-wa-msg="Olá! Vi o site da JK Rústico e gostaria de mais informações."><svg class="icon"><use href="#i-wa"/></svg>Falar com a JK Rústico</a>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="logo.png" alt="JK Rústico" style="margin-bottom: 1.5rem; filter: brightness(0) invert(1);">
-                    <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Peças rústicas e exclusivas.<br>A natureza cria, nós lapidamos.</p>
+                    <img src="logo-256.png" alt="JK Rústico" class="footer-logo" width="256" height="256" loading="lazy">
+                    <p>Peças rústicas e exclusivas.<br>A natureza cria, nós lapidamos.</p>
                 </div>
-                
+
                 <div class="footer-col">
-                    <h4>Links Rápidos</h4>
+                    <h4>Links rápidos</h4>
                     <ul class="footer-links">
                         <li><a href="index.html">Início</a></li>
                         <li><a href="produtos/index.html">Produtos</a></li>
@@ -355,7 +449,7 @@
                         <li><a href="contato/index.html">Contato</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
                     <h4>Contato</h4>
                     <ul class="footer-links">
@@ -363,34 +457,33 @@
                         <li><a href="https://instagram.com/jkrustico" target="_blank" rel="noopener">Instagram: @jkrustico</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-col">
                     <h4>Endereço</h4>
-                    <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">
+                    <p>
                         Praça Higino da Silveira, 101 - Alto<br>
                         Teresópolis - RJ<br>
                         CEP 25961-025
                     </p>
-                    <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-top: 1rem;">
+                    <p>
                         <strong>Sábado:</strong> 09:00 às 18:30<br>
                         <strong>Domingo:</strong> 09:00 às 18:00<br>
                         <strong>Segunda a sexta:</strong> fechado
                     </p>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
-                <p>&copy; 2026 JK Rústico. Todos os direitos reservados.</p>
+                <p>&copy; <span data-year>2026</span> JK Rústico. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
     <!-- Floating WhatsApp CTA -->
     <a href="#" class="whatsapp-float wa-link-default" aria-label="Falar conosco no WhatsApp">
-        <svg fill="currentColor" width="24px" height="24px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"/><path d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"/></svg>
+        <svg><use href="#i-wa"/></svg>
     </a>
 
     <script src="js/main.js"></script>
 </body>
 </html>
-

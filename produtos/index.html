@@ -3,77 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Produtos | JK Rústico</title>
-    <meta name="description" content="Conheça o catálogo completo da JK Rústico. Mesas, lareiras, bancos e aparadores exclusivos feitos com madeira reciclada.">
-    
+    <title>Catálogo de Móveis Rústicos | JK Rústico</title>
+    <meta name="description" content="Conheça o catálogo da JK Rústico: mesas, aparadores, bancos, mesas de centro e peças decorativas exclusivas feitas com madeira reciclada em Teresópolis.">
+    <link rel="canonical" href="https://www.jkrustico.com.br/produtos/">
+    <meta name="theme-color" content="#1F1C18">
+    <link rel="icon" type="image/png" href="../logo-256.png">
+
+    <meta property="og:title" content="Catálogo | JK Rústico">
+    <meta property="og:description" content="Mesas, aparadores, bancos e decoração em madeira reciclada. Enviamos para todo o Brasil.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.jkrustico.com.br/produtos/">
+    <meta property="og:image" content="https://www.jkrustico.com.br/img3.jpg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <symbol id="i-wa" viewBox="0 0 16 16"><path d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"/><path d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"/></symbol>
+    </svg>
+
     <header class="header">
         <div class="container header-container">
-            <a href="../index.html" class="logo">
-                <img src="../logo.png" alt="JK Rústico Logo">
+            <a href="../index.html" class="logo" aria-label="Página Inicial JK Rústico">
+                <img src="../logo-256.png" alt="JK Rústico" width="256" height="256">
             </a>
-            <nav>
-                <ul class="nav-links">
+            <nav aria-label="Menu principal">
+                <ul class="nav-links" id="menu">
                     <li><a href="../index.html">Início</a></li>
                     <li><a href="../sobre/index.html">A JK Rústico</a></li>
-                    <li><a href="index.html">Produtos</a></li>
+                    <li><a href="index.html" aria-current="page">Produtos</a></li>
                     <li><a href="../contato/index.html">Contato</a></li>
+                    <li class="nav-cta"><a href="#" class="btn btn-primary wa-link-default"><svg class="icon"><use href="#i-wa"/></svg>Falar no WhatsApp</a></li>
                 </ul>
             </nav>
-            <button class="mobile-menu-btn" aria-label="Abrir menu">☰</button>
+            <button class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
         </div>
     </header>
 
-    <div style="margin-top: 80px; padding: var(--spacing-md) 0; background-color: var(--bg-secondary);">
+    <div class="page-top breadcrumb-bar">
         <div class="container">
             <nav aria-label="Breadcrumb">
-                <ol style="display:flex; list-style:none; gap:0.5rem; font-size:0.9rem; color:var(--text-muted);">
-                    <li><a href="../index.html" style="text-decoration:underline;">Início</a></li>
-                    <li>/</li>
+                <ol class="breadcrumb">
+                    <li><a href="../index.html">Início</a></li>
                     <li aria-current="page">Produtos</li>
                 </ol>
             </nav>
         </div>
     </div>
 
+    <main>
     <section class="section">
         <div class="container">
-            <div class="text-center mb-lg">
-                <h1>Nosso Catálogo</h1>
-                <p>Peças exclusivas feitas à mão para transformar o seu ambiente.</p>
+            <div class="section-head">
+                <span class="eyebrow">Catálogo</span>
+                <h1>Nosso catálogo</h1>
+                <p>Peças exclusivas feitas à mão para transformar o seu ambiente. Por trabalharmos com madeira reciclada, cada peça é única: consulte a disponibilidade pelo WhatsApp.</p>
             </div>
-            
+
+            <div class="filters" role="group" aria-label="Filtrar por categoria">
+                <button type="button" class="filter-btn" data-filter="todos" aria-pressed="true">Todos</button>
+                <button type="button" class="filter-btn" data-filter="mesas" aria-pressed="false">Mesas</button>
+                <button type="button" class="filter-btn" data-filter="aparadores" aria-pressed="false">Aparadores e bancos</button>
+                <button type="button" class="filter-btn" data-filter="salas" aria-pressed="false">Mesas de centro</button>
+                <button type="button" class="filter-btn" data-filter="decoracao" aria-pressed="false">Decoração</button>
+            </div>
+
             <div class="grid-4">
-                <div class="card">
+                <!-- Mesas -->
+                <div class="card" data-category="mesas">
+                    <a href="mesa-rustica-macica/index.html" class="card-img-wrapper">
+                        <img src="../img3.jpg" alt="Mesa de jantar rústica com tampo inteiriço em varanda envidraçada" width="1080" height="1440" loading="lazy">
+                    </a>
+                    <div class="card-content">
+                        <span class="card-category">Mesas</span>
+                        <h2 class="card-title"><a href="mesa-rustica-macica/index.html">Mesa de Jantar Rústica</a></h2>
+                        <p class="card-desc">Tampo inteiriço de madeira maciça com veios marcantes preservados.</p>
+                        <div class="card-actions">
+                            <a href="#" class="btn btn-primary" data-wa-msg="Olá! Tenho interesse na Mesa de Jantar Rústica. Gostaria de saber disponibilidade e informações."><svg class="icon"><use href="#i-wa"/></svg>Tenho interesse</a>
+                            <a href="mesa-rustica-macica/index.html" class="btn btn-outline btn-sm">Ver detalhes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-category="mesas">
                     <div class="card-img-wrapper">
-                        <img src="../img1.jpg" alt="Mesa de Jantar Rústica" loading="lazy">
+                        <img src="../img2.jpg" alt="Mesa de jantar orgânica com as aberturas naturais da tora preservadas" width="1080" height="1440" loading="lazy">
                     </div>
                     <div class="card-content">
                         <span class="card-category">Mesas</span>
-                        <h2 class="card-title" style="font-size: 1.25rem;">Mesa de Jantar Rústica</h2>
-                        <p class="card-desc">Madeira de demolição.</p>
-                        <a href="#" class="btn btn-primary" data-wa-msg="Olá! Tenho interesse na Mesa de Jantar Rústica."><svg fill="currentColor" width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"/><path d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"/></svg>Tenho interesse</a>
+                        <h2 class="card-title">Mesa Orgânica</h2>
+                        <p class="card-desc">Formato natural da tora, com aberturas e marcas do tempo preservadas.</p>
+                        <a href="#" class="btn btn-primary" data-wa-msg="Olá! Tenho interesse na Mesa Orgânica. Gostaria de saber disponibilidade e informações."><svg class="icon"><use href="#i-wa"/></svg>Tenho interesse</a>
+                    </div>
+                </div>
+
+                <div class="card" data-category="mesas">
+                    <div class="card-img-wrapper">
+                        <img src="../img9.jpg" alt="Mesa longa de madeira maciça em área gourmet" width="1080" height="1440" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Mesas</span>
+                        <h2 class="card-title">Mesa para Área Gourmet</h2>
+                        <p class="card-desc">Tampo longo de madeira maciça, ideal para receber a família e os amigos.</p>
+                        <a href="#" class="btn btn-primary" data-wa-msg="Olá! Tenho interesse na Mesa para Área Gourmet. Gostaria de saber disponibilidade e informações."><svg class="icon"><use href="#i-wa"/></svg>Tenho interesse</a>
+                    </div>
+                </div>
+
+                <div class="card" data-category="mesas">
+                    <div class="card-img-wrapper">
+                        <img src="../img1.jpg" alt="Mesa de tora maciça com a lateral da tora à mostra" width="1080" height="1350" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Mesas</span>
+                        <h2 class="card-title">Mesa de Tora Maciça</h2>
+                        <p class="card-desc">Peça imponente, com a lateral e os anéis da tora à mostra.</p>
+                        <a href="#" class="btn btn-primary" data-wa-msg="Olá! Tenho interesse na Mesa de Tora Maciça. Gostaria de saber disponibilidade e informações."><svg class="icon"><use href="#i-wa"/></svg>Tenho interesse</a>
+                    </div>
+                </div>
+
+                <!-- Aparadores e bancos -->
+                <div class="card" data-category="aparadores">
+                    <div class="card-img-wrapper">
+                        <img src="../img5.jpg" alt="Aparador orgânico de madeira maciça com base de ferro" width="1080" height="1350" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Aparadores</span>
+                        <h2 class="card-title">Aparador Orgânico</h2>
+                        <p class="card-desc">Tampo de borda natural com base de ferro, para hall ou sala de estar.</p>
+                        <a href="#" class="btn btn-primary" data-wa-msg="Olá! Tenho interesse no Aparador Orgânico. Gostaria de saber disponibilidade e informações."><svg class="icon"><use href="#i-wa"/></svg>Tenho interesse</a>
+                    </div>
+                </div>
+
+                <div class="card" data-category="aparadores">
+                    <div class="card-img-wrapper">
+                        <img src="../img10.jpg" alt="Aparador de madeira maciça sobre base de máquina de costura Singer antiga" width="1440" height="1440" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Aparadores</span>
+                        <h2 class="card-title">Aparador Singer</h2>
+                        <p class="card-desc">Tampo maciço sobre a base de ferro de uma máquina de costura antiga.</p>
+                        <a href="#" class="btn btn-primary" data-wa-msg="Olá! Tenho interesse no Aparador Singer. Gostaria de saber disponibilidade e informações."><svg class="icon"><use href="#i-wa"/></svg>Tenho interesse</a>
+                    </div>
+                </div>
+
+                <div class="card" data-category="aparadores">
+                    <div class="card-img-wrapper">
+                        <img src="../img8.jpg" alt="Banco esculpido em tora de madeira maciça" width="1080" height="1349" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Bancos</span>
+                        <h2 class="card-title">Banco de Tora</h2>
+                        <p class="card-desc">Desenho natural seguindo o corte original da tora de madeira.</p>
+                        <a href="#" class="btn btn-primary" data-wa-msg="Olá! Tenho interesse no Banco de Tora. Gostaria de saber disponibilidade e informações."><svg class="icon"><use href="#i-wa"/></svg>Tenho interesse</a>
+                    </div>
+                </div>
+
+                <!-- Mesas de centro -->
+                <div class="card" data-category="salas">
+                    <div class="card-img-wrapper">
+                        <img src="../img7.jpg" alt="Conjunto de três mesas de centro feitas de tora de madeira" width="1080" height="1440" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Mesas de centro</span>
+                        <h2 class="card-title">Mesas de Centro de Tora</h2>
+                        <p class="card-desc">Conjunto de três peças que se encaixam e mostram os anéis da madeira.</p>
+                        <a href="#" class="btn btn-primary" data-wa-msg="Olá! Tenho interesse nas Mesas de Centro de Tora. Gostaria de saber disponibilidade e informações."><svg class="icon"><use href="#i-wa"/></svg>Tenho interesse</a>
+                    </div>
+                </div>
+
+                <!-- Decoração -->
+                <div class="card" data-category="decoracao">
+                    <div class="card-img-wrapper">
+                        <img src="../img6.jpg" alt="Carrinho bar com bandejas de madeira e estrutura de ferro" width="1080" height="1440" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Decoração</span>
+                        <h2 class="card-title">Carrinho Bar</h2>
+                        <p class="card-desc">Bandejas de madeira com estrutura de ferro, adega e rodízios.</p>
+                        <a href="#" class="btn btn-primary" data-wa-msg="Olá! Tenho interesse no Carrinho Bar. Gostaria de saber disponibilidade e informações."><svg class="icon"><use href="#i-wa"/></svg>Tenho interesse</a>
+                    </div>
+                </div>
+
+                <div class="card" data-category="decoracao">
+                    <div class="card-img-wrapper">
+                        <img src="../img4.jpg" alt="Espelho grande com moldura rústica de madeira maciça" width="1080" height="1350" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Decoração</span>
+                        <h2 class="card-title">Espelho com Moldura Rústica</h2>
+                        <p class="card-desc">Moldura de madeira maciça com nós e veios aparentes.</p>
+                        <a href="#" class="btn btn-primary" data-wa-msg="Olá! Tenho interesse no Espelho com Moldura Rústica. Gostaria de saber disponibilidade e informações."><svg class="icon"><use href="#i-wa"/></svg>Tenho interesse</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="section section-dark text-center">
+        <div class="container">
+            <h2 class="mb-sm">Não encontrou o que procura?</h2>
+            <p class="mb-lg" style="max-width: 600px; margin-left: auto; margin-right: auto;">Mande uma foto do seu ambiente e as medidas que você precisa. Verificamos as pranchas disponíveis e montamos um orçamento.</p>
+            <a href="#" class="btn btn-primary" data-wa-msg="Olá! Vi o catálogo da JK Rústico e gostaria de um orçamento sob medida."><svg class="icon"><use href="#i-wa"/></svg>Pedir orçamento sob medida</a>
+        </div>
+    </section>
+    </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="../logo.png" alt="JK Rústico" style="margin-bottom: 1.5rem; filter: brightness(0) invert(1);">
-                    <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Peças rústicas e exclusivas.<br>A natureza cria, nós lapidamos.</p>
+                    <img src="../logo-256.png" alt="JK Rústico" class="footer-logo" width="256" height="256" loading="lazy">
+                    <p>Peças rústicas e exclusivas.<br>A natureza cria, nós lapidamos.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Links Rápidos</h4>
+                    <h4>Links rápidos</h4>
                     <ul class="footer-links">
                         <li><a href="../index.html">Início</a></li>
                         <li><a href="index.html">Produtos</a></li>
@@ -88,16 +235,21 @@
                         <li><a href="https://instagram.com/jkrustico" target="_blank" rel="noopener">Instagram: @jkrustico</a></li>
                     </ul>
                 </div>
+                <div class="footer-col">
+                    <h4>Endereço</h4>
+                    <p>Praça Higino da Silveira, 101 - Alto<br>Teresópolis - RJ<br>CEP 25961-025</p>
+                    <p><strong>Sábado:</strong> 09:00 às 18:30<br><strong>Domingo:</strong> 09:00 às 18:00<br><strong>Segunda a sexta:</strong> fechado</p>
+                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 JK Rústico. Todos os direitos reservados.</p>
+                <p>&copy; <span data-year>2026</span> JK Rústico. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
+
     <a href="#" class="whatsapp-float wa-link-default" aria-label="Falar conosco no WhatsApp">
-        <svg fill="currentColor" width="24px" height="24px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M11.42 9.49c-.19-.09-1.1-.54-1.27-.61s-.29-.09-.42.1-.48.6-.59.73-.21.14-.4 0a5.13 5.13 0 0 1-1.49-.92 5.25 5.25 0 0 1-1-1.29c-.11-.18 0-.28.08-.38s.18-.21.28-.32a1.39 1.39 0 0 0 .18-.31.38.38 0 0 0 0-.33c0-.09-.42-1-.58-1.37s-.3-.32-.41-.32h-.4a.72.72 0 0 0-.5.23 2.1 2.1 0 0 0-.65 1.55A3.59 3.59 0 0 0 5 8.2 8.32 8.32 0 0 0 8.19 11c.44.19.78.3 1.05.39a2.53 2.53 0 0 0 1.17.07 1.93 1.93 0 0 0 1.26-.88 1.67 1.67 0 0 0 .11-.88c-.05-.07-.17-.12-.36-.21z"/><path d="M13.29 2.68A7.36 7.36 0 0 0 8 .5a7.44 7.44 0 0 0-6.41 11.15l-1 3.85 3.94-1a7.4 7.4 0 0 0 3.55.9H8a7.44 7.44 0 0 0 5.29-12.72zM8 14.12a6.12 6.12 0 0 1-3.15-.87l-.22-.13-2.34.61.62-2.28-.14-.23a6.18 6.18 0 0 1 9.6-7.65 6.12 6.12 0 0 1 1.81 4.37A6.19 6.19 0 0 1 8 14.12z"/></svg>
+        <svg><use href="#i-wa"/></svg>
     </a>
     <script src="../js/main.js"></script>
 </body>
 </html>
-
